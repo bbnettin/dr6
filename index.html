@@ -198,6 +198,7 @@ h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:1rem}
 }
 .stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem;margin-bottom:.7rem}
 .review p{color:rgba(255,255,255,.88);margin-bottom:.9rem;font-style:italic}
+.review-author{font-weight:700;font-size:.95rem}
 .review-source{display:flex;align-items:center;gap:.4rem;font-size:.82rem;color:rgba(255,255,255,.65);margin-top:2px}
 .review-source svg{width:15px;height:15px}
 
@@ -437,7 +438,7 @@ footer p{margin-top:.4rem}
 <!-- ================= HOW IT WORKS ================= -->
 <section class="center">
   <div class="container">
-    <p class="section-label">Getting Started Is Easy - remove this whole section? </p>
+    <p class="section-label">Getting Started Is Easy</p>
     <h2>Relief in Three Simple Steps</h2>
     <p class="section-sub">No confusion, no runaround. Here&rsquo;s exactly what to expect when you call.</p>
     <div class="steps" style="text-align:left">
@@ -465,7 +466,7 @@ footer p{margin-top:.4rem}
   <div class="container doctor-grid">
     <div class="doctor-img">
       <!-- IMAGE: DOCTOR — professional headshot of Dr. Robert Mastrosimone -->
-      <img src="https://placehold.co/800x700/0e3a4c/ffffff?text=Dr.+Simone+Portrait" alt="Dr. Robert Simone, board-certified allergist in Boynton Beach">
+      <img src="https://placehold.co/800x700/0e3a4c/ffffff?text=Dr.+Simone+Portrait" alt="Dr. Robert Mastrosimone, board-certified allergist in Boynton Beach">
     </div>
     <div>
       <p class="section-label">Meet Your Allergist</p>
@@ -553,11 +554,11 @@ footer p{margin-top:.4rem}
 <script>
 /* ===== Sample Google reviews — replace with real reviews via the Google Places API or manual copy ===== */
 const reviews = [
-  {stars:5, text:"Dr. Simone is the first doctor who actually listened. My allergy drops arrived at my door in days — no more weekly shots!", author:"Margaret L.", time:"2 weeks ago"},
-  {stars:5, text:"After years of avoiding my daughter's cat, I can finally visit the grandkids comfortably. Life changing.", time:"1 month ago"},
-  {stars:5, text:"Same-day test results and a plan before I left the office. Couldn't be easier or more professional.", author:"Susan M.", time:"3 weeks ago"},
-  {stars:5, text:"The drops are so simple my 8-year-old takes them without fuss. Wish we'd found Dr. Simone years ago.", author:"James P.", time:"2 months ago"},
-  {stars:5, text:"Telehealth made everything easy while we were up north for the summer. They shipped my drops right to us.", author:"Diane W.", time:"1 week ago"},
+  {stars:5, text:"Dr. Simone is the first doctor who actually listened. My allergy drops arrived at my door in days — no more weekly shots!", author:"", time:"2 weeks ago"},
+  {stars:5, text:"After years of avoiding my daughter's cat, I can finally visit the grandkids comfortably. Life changing.",author:"", time:"1 month ago"},
+  {stars:5, text:"Same-day test results and a plan before I left the office. Couldn't be easier or more professional.", author:"", time:"3 weeks ago"},
+  {stars:5, text:"The drops are so simple my 8-year-old takes them without fuss. Wish we'd found Dr. Simone years ago.", author:"", time:"2 months ago"},
+  {stars:5, text:"Telehealth made everything easy while we were up north for the summer. They shipped my drops right to us.", author:"", time:"1 week ago"},
 ];
 const gLogo = '<svg viewBox="0 0 24 24" fill="#fff"><path d="M21.35 11.1H12v2.9h5.35c-.5 2.5-2.6 4.1-5.35 4.1a5.9 5.9 0 1 1 0-11.8c1.5 0 2.85.55 3.9 1.45l2.15-2.15A8.9 8.9 0 1 0 12 20.9c4.45 0 8.15-3.25 8.9-7.5l.45-2.3z"/></svg>';
 const star = "★";
